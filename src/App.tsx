@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ceo from "./data/ceo";
+import "./App.css";
+import { EmployeeOrgApp } from "./data/EmployeeOrgApp";
+import Card from "./components/Card";
+
 
 function App() {
+const app = new EmployeeOrgApp(ceo[0]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="org-tree">
+          <Card employee={[app.ceo]} />
+        </div>
+      </div>
     </div>
   );
 }
