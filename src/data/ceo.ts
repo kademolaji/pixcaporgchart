@@ -23,11 +23,11 @@ const ceo: Employee[] = [{
                             subordinates: [
                                 {
                                     uniqueId: 6,
-                                    name: "Tina Teff",
+                                    name: "Tina Teff ",
                                     subordinates: [
                                         {
                                             uniqueId: 7,
-                                            name: "Will Turner",
+                                            name: "Will Turner ",
                                             subordinates: []
                                         }
                                     ]
