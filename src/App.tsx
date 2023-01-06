@@ -7,6 +7,7 @@ import Card from "./components/Card";
 
 function App() {
 const app = new EmployeeOrgApp(ceo[0]);
+app.move(5,7)
   return (
     <div className="App">
       <div className="container">
